@@ -5,4 +5,5 @@
   (println "Hello, World!"))
 
 ;;macro for excepetion handling Java style
-(defmacro safe )
+(defmacro safe
+  ([v] `(try ~v (catch Exception e# ( str "Exception " e#)))))
